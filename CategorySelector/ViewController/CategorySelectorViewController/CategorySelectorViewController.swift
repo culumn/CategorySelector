@@ -58,6 +58,8 @@ class CategorySelectorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Category"
+
         configureCollectionView()
         categoryCollectionView.reloadData()
     }
@@ -214,6 +216,7 @@ extension CategorySelectorViewController: UICollectionViewDelegate {
             var category = categories[indexPath.row]
             category.title = " "
             category.logoImage = .cancell
+
             let index = categoryType == .small ? indexPath.row : 0
             category.subCategories.insert(category, at: index)
             selectedCategory = category

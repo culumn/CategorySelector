@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="-1551" y="143"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Place-->
         <scene sceneID="Yfd-4e-Ofd">
             <objects>
                 <viewController id="Xvf-ZN-cvr" customClass="HomeViewController" customModule="CategorySelector" customModuleProvider="target" sceneMemberID="viewController">
@@ -62,7 +62,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dio-YL-Nhl"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6cA-S4-C3J"/>
+                    <navigationItem key="navigationItem" title="Place" id="6cA-S4-C3J"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vNA-B7-L7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
