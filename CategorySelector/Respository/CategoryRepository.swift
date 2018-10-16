@@ -10,7 +10,7 @@ import Foundation
 
 class CategoryRepository {
 
-    func getCategories(type: CategoryType) -> [Category] {
+    func getCategories(type: CategoryNumber) -> [Category] {
         let categories: [Category]
         switch type {
         case .small:

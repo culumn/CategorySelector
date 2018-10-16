@@ -23,7 +23,7 @@
 		96885CDD21657902000633CC /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96885CDC21657902000633CC /* UIViewExt.swift */; };
 		96885CDF21657963000633CC /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96885CDE21657963000633CC /* RoundView.swift */; };
 		96D9533E2175B228001680ED /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9533D2175B228001680ED /* R.generated.swift */; };
-		96D953472175BAFB001680ED /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D953462175BAFB001680ED /* CategoryType.swift */; };
+		96D953472175BAFB001680ED /* CategoryNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D953462175BAFB001680ED /* CategoryNumber.swift */; };
 		98FE2835A85E6E425F595483 /* Pods_CategorySelector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5522F6EA1BDF27EBCBFF4435 /* Pods_CategorySelector.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +48,7 @@
 		96885CDC21657902000633CC /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		96885CDE21657963000633CC /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
 		96D9533D2175B228001680ED /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
-		96D953462175BAFB001680ED /* CategoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryType.swift; sourceTree = "<group>"; };
+		96D953462175BAFB001680ED /* CategoryNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryNumber.swift; sourceTree = "<group>"; };
 		AB50DCA325C85F70FFCF9653 /* Pods-CategorySelector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CategorySelector.release.xcconfig"; path = "Pods/Target Support Files/Pods-CategorySelector/Pods-CategorySelector.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,7 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				96885CD52163597A000633CC /* Category.swift */,
-				96D953462175BAFB001680ED /* CategoryType.swift */,
+				96D953462175BAFB001680ED /* CategoryNumber.swift */,
 				96885CD72164B60C000633CC /* LogoImage.swift */,
 			);
 			path = Entity;
@@ -326,7 +326,7 @@
 				967952A92167C3560029C908 /* UIColorExt.swift in Sources */,
 				96885CD62163597A000633CC /* Category.swift in Sources */,
 				96885CDD21657902000633CC /* UIViewExt.swift in Sources */,
-				96D953472175BAFB001680ED /* CategoryType.swift in Sources */,
+				96D953472175BAFB001680ED /* CategoryNumber.swift in Sources */,
 				96885CD2216107B2000633CC /* CategoryRepository.swift in Sources */,
 				967B3B742174E0BB00EE92D1 /* HomeViewController.swift in Sources */,
 				96885CCF2160D45B000633CC /* CategoryCollectionViewCell.swift in Sources */,

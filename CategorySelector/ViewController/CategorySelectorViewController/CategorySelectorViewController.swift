@@ -36,7 +36,7 @@ class CategorySelectorViewController: UIViewController {
     var selectedCategory: Category?
     var selectedCategoryIndex: IndexPath?
     var selectedCellCenter: CGPoint?
-    let categoryType: CategoryType
+    let categoryNumber: CategoryNumber
     let repository = CategoryRepository()
     let categories: [Category]
 
@@ -47,9 +47,9 @@ class CategorySelectorViewController: UIViewController {
     init(
         nibName nibNameOrNil: String? = R.nib.categorySelectorViewController.name,
         bundle nibBundleOrNil: Bundle? = R.nib.categorySelectorViewController.bundle,
-        categoryType: CategoryType
+        categoryType: CategoryNumber
         ) {
-        self.categoryType = categoryType
+        self.categoryNumber = categoryType
         self.categories = repository.getCategories(type: categoryType)
 
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -217,7 +217,7 @@ extension CategorySelectorViewController: UICollectionViewDelegate {
             category.title = " "
             category.logoImage = .cancell
 
-            let index = categoryType == .small ? indexPath.row : 0
+            let index = categoryNumber == .small ? indexPath.row : 0
             category.subCategories.insert(category, at: index)
             selectedCategory = category
             selectedCategoryIndex = IndexPath(row: index, section: indexPath.section)

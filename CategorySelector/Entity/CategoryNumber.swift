@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum CategoryType {
+enum CategoryNumber {
     case small
     case medium
 }
