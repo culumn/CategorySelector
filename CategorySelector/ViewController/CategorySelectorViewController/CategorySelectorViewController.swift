@@ -67,9 +67,11 @@ class CategorySelectorViewController: UIViewController {
         subCategoryCollectionView.register(R.nib.categoryCollectionViewCell)
     }
 
-    private func reloadSubCategory(subCategoryReloadingAction: SubCategoryReloadingAction,
-                                   indexPath: IndexPath) {
-        switch subCategoryReloadingAction {
+    private func reloadSubCategory(
+        reloadingAction: SubCategoryReloadingAction,
+        indexPath: IndexPath
+        ) {
+        switch reloadingAction {
         case .expand:
             subCategoryCollectionView.alpha = 0.3
             subCategoryCollectionView.isHidden = false
@@ -172,7 +174,10 @@ extension CategorySelectorViewController: UICollectionViewDataSource {
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath
         ) -> UICollectionViewCell {
-        guard let categoryCell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.categoryCollectionViewCell, for: indexPath) else {
+        guard let categoryCell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: R.reuseIdentifier.categoryCollectionViewCell,
+            for: indexPath
+            ) else {
             fatalError("Failed to load cell")
         }
         let category: Category
@@ -197,11 +202,10 @@ extension CategorySelectorViewController: UICollectionViewDelegate {
         collectionView.deselectItem(at: indexPath, animated: true)
 
         if collectionView === subCategoryCollectionView {
-
             if indexPath == selectedCategoryIndex {
                 // MARK: Collapse sub-caregories
                 self.selectedCategory = nil
-                reloadSubCategory(subCategoryReloadingAction: .collapse, indexPath: indexPath)
+                reloadSubCategory(reloadingAction: .collapse, indexPath: indexPath)
             } else {
                 // MARK: Do something using sub-category
             }
@@ -216,7 +220,7 @@ extension CategorySelectorViewController: UICollectionViewDelegate {
             selectedCategoryIndex = IndexPath(row: index, section: indexPath.section)
             selectedCellCenter = collectionView.cellForItem(at: indexPath)?.center
 
-            reloadSubCategory(subCategoryReloadingAction: .expand, indexPath: indexPath)
+            reloadSubCategory(reloadingAction: .expand, indexPath: indexPath)
         }
     }
 
