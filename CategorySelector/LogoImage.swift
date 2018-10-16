@@ -1,0 +1,158 @@
+//
+//  LogoImage.swift
+//  CategorySelector
+//
+//  Created by Matsuoka Yoshiteru on 2018/10/03.
+//  Copyright © 2018年 culumn. All rights reserved.
+//
+
+import UIKit
+
+enum LogoImage {
+    case airplane
+    case amusementPark
+    case apparel
+    case bakeries
+    case bank
+    case bar
+    case beauty
+    case bed
+    case beer
+    case bus
+    case cancell
+    case carServices
+    case carRental
+    case coffee
+    case desserts
+    case drug
+    case fitness
+    case food
+    case fun
+    case gasStation
+    case hanger
+    case health
+    case home
+    case hospital
+    case humberger
+    case mail
+    case mic
+    case movie
+    case museum
+    case music
+    case office
+    case park
+    case pet
+    case popular
+    case ramen
+    case shoppingBag1
+    case shoppingBag2
+    case sportingGoods
+    case sports
+    case star
+    case store
+    case swimming
+    case tea
+    case train
+    case turnTable
+    case wellness
+    case wine
+
+    var image: UIImage? {
+        switch self {
+        case .airplane:
+            return R.image.airplane()
+        case .amusementPark:
+            return R.image.amusementPark()
+        case .apparel:
+            return R.image.apparel()
+        case .bakeries:
+            return R.image.bakerries()
+        case .bank:
+            return R.image.bank()
+        case .bar:
+            return R.image.bar()
+        case .beauty:
+            return R.image.beauty()
+        case .bed:
+            return R.image.bed()
+        case .beer:
+            return R.image.beer()
+        case .bus:
+            return R.image.bus()
+        case .cancell:
+            return R.image.cancell()
+        case .carServices:
+            return R.image.carServices()
+        case .carRental:
+            return R.image.carRental()
+        case .coffee:
+            return R.image.coffee()
+        case .desserts:
+            return R.image.desserts()
+        case .drug:
+            return R.image.drug()
+        case .fitness:
+            return R.image.fitness()
+        case .food:
+            return R.image.food()
+        case .fun:
+            return R.image.fun()
+        case .gasStation:
+            return R.image.gasStation()
+        case .hanger:
+            return R.image.hanger()
+        case .health:
+            return R.image.health()
+        case .home:
+            return R.image.home()
+        case .hospital:
+            return R.image.hospital()
+        case .humberger:
+            return R.image.humberger()
+        case .mail:
+            return R.image.mail()
+        case .mic:
+            return R.image.mic()
+        case .movie:
+            return R.image.movie()
+        case .museum:
+            return R.image.museum()
+        case .music:
+            return R.image.music()
+        case .office:
+            return R.image.office()
+        case .park:
+            return R.image.park()
+        case .pet:
+            return R.image.pet()
+        case .popular:
+            return R.image.popular()
+        case .ramen:
+            return R.image.ramen()
+        case .shoppingBag1:
+            return R.image.shoppingBag1()
+        case .shoppingBag2:
+            return R.image.shoppingBag2()
+        case .sportingGoods:
+            return R.image.sportingGoods()
+        case .sports:
+            return R.image.sports()
+        case .star:
+            return R.image.star()
+        case .store:
+            return R.image.store()
+        case .swimming:
+            return R.image.swimming()
+        case .tea:
+            return R.image.tea()
+        case .train:
+            return R.image.train()
+        case .turnTable:
+            return R.image.turnTable()
+        case .wellness:
+            return R.image.wellness()
+        case .wine:
+            return R.image.wine()
+        }
+    }
+}
