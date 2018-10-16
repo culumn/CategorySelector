@@ -23,6 +23,7 @@
 		96885CDD21657902000633CC /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96885CDC21657902000633CC /* UIViewExt.swift */; };
 		96885CDF21657963000633CC /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96885CDE21657963000633CC /* RoundView.swift */; };
 		96D9533E2175B228001680ED /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9533D2175B228001680ED /* R.generated.swift */; };
+		96D953472175BAFB001680ED /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D953462175BAFB001680ED /* CategoryType.swift */; };
 		98FE2835A85E6E425F595483 /* Pods_CategorySelector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5522F6EA1BDF27EBCBFF4435 /* Pods_CategorySelector.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		96885CDC21657902000633CC /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		96885CDE21657963000633CC /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
 		96D9533D2175B228001680ED /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		96D953462175BAFB001680ED /* CategoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryType.swift; sourceTree = "<group>"; };
 		AB50DCA325C85F70FFCF9653 /* Pods-CategorySelector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CategorySelector.release.xcconfig"; path = "Pods/Target Support Files/Pods-CategorySelector/Pods-CategorySelector.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,23 +96,80 @@
 			children = (
 				96885CBB2160C5C5000633CC /* AppDelegate.swift */,
 				96D9533D2175B228001680ED /* R.generated.swift */,
-				96885CBD2160C5C5000633CC /* CategorySelectorViewController.swift */,
-				967B3B712174DCDA00EE92D1 /* CategorySelectorViewController.xib */,
-				96885CCD2160D45B000633CC /* CategoryCollectionViewCell.swift */,
-				96885CD1216107B2000633CC /* CategoryRepository.swift */,
-				96885CCE2160D45B000633CC /* CategoryCollectionViewCell.xib */,
-				96885CDC21657902000633CC /* UIViewExt.swift */,
-				96885CDE21657963000633CC /* RoundView.swift */,
-				96885CBF2160C5C5000633CC /* Main.storyboard */,
-				967B3B732174E0BB00EE92D1 /* HomeViewController.swift */,
-				967952A82167C3560029C908 /* UIColorExt.swift */,
-				96885CD52163597A000633CC /* Category.swift */,
-				96885CD72164B60C000633CC /* LogoImage.swift */,
+				96D953452175BABF001680ED /* ViewController */,
+				96D953442175BAB4001680ED /* CustomView */,
+				96D953422175BA73001680ED /* Respository */,
+				96D953432175BA81001680ED /* Extension */,
+				96D953482175BB0D001680ED /* Entity */,
 				96885CC22160C5C7000633CC /* Assets.xcassets */,
+				96885CBF2160C5C5000633CC /* Main.storyboard */,
 				96885CC42160C5C7000633CC /* LaunchScreen.storyboard */,
 				96885CC72160C5C7000633CC /* Info.plist */,
 			);
 			path = CategorySelector;
+			sourceTree = "<group>";
+		};
+		96D953402175BA64001680ED /* CategorySelectorViewController */ = {
+			isa = PBXGroup;
+			children = (
+				96885CBD2160C5C5000633CC /* CategorySelectorViewController.swift */,
+				967B3B712174DCDA00EE92D1 /* CategorySelectorViewController.xib */,
+			);
+			path = CategorySelectorViewController;
+			sourceTree = "<group>";
+		};
+		96D953412175BA6D001680ED /* CategoryCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				96885CCD2160D45B000633CC /* CategoryCollectionViewCell.swift */,
+				96885CCE2160D45B000633CC /* CategoryCollectionViewCell.xib */,
+			);
+			path = CategoryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		96D953422175BA73001680ED /* Respository */ = {
+			isa = PBXGroup;
+			children = (
+				96885CD1216107B2000633CC /* CategoryRepository.swift */,
+			);
+			path = Respository;
+			sourceTree = "<group>";
+		};
+		96D953432175BA81001680ED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				96885CDC21657902000633CC /* UIViewExt.swift */,
+				967952A82167C3560029C908 /* UIColorExt.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		96D953442175BAB4001680ED /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				96D953412175BA6D001680ED /* CategoryCollectionViewCell */,
+				96885CDE21657963000633CC /* RoundView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		96D953452175BABF001680ED /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				967B3B732174E0BB00EE92D1 /* HomeViewController.swift */,
+				96D953402175BA64001680ED /* CategorySelectorViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		96D953482175BB0D001680ED /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				96885CD52163597A000633CC /* Category.swift */,
+				96D953462175BAFB001680ED /* CategoryType.swift */,
+				96885CD72164B60C000633CC /* LogoImage.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		DA12B0B278A7E99BAE19CB74 /* Frameworks */ = {
@@ -267,6 +326,7 @@
 				967952A92167C3560029C908 /* UIColorExt.swift in Sources */,
 				96885CD62163597A000633CC /* Category.swift in Sources */,
 				96885CDD21657902000633CC /* UIViewExt.swift in Sources */,
+				96D953472175BAFB001680ED /* CategoryType.swift in Sources */,
 				96885CD2216107B2000633CC /* CategoryRepository.swift in Sources */,
 				967B3B742174E0BB00EE92D1 /* HomeViewController.swift in Sources */,
 				96885CCF2160D45B000633CC /* CategoryCollectionViewCell.swift in Sources */,
@@ -420,7 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9HY468JKT5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CategorySelector/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,7 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9HY468JKT5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CategorySelector/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

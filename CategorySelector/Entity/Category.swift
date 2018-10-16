@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct Category: Hashable {
+struct Category {
     var title: String?
     var themeColor: UIColor?
     var logoImage: LogoImage?
@@ -36,9 +36,4 @@ struct Category: Hashable {
         self.logoImage = logoImage
         self.subCategories = subCategories
     }
-}
-
-enum CategoryType {
-    case small
-    case medium
 }
